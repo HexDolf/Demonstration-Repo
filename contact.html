@@ -8,22 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact me</h1>
 
     <header>
         <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="about.html"><li>About</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <a href="MaterializeContact.html"><li>contact2</li></a>
-            </ul>
-        </nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Contact me</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+            <li><a href="MaterializeContact.html">Demo Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+        
     </header>
+    
+    
     <h1>Contact Me</h1>
     <form name="contact" method="POST" data-netlify="true">
         <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email adress" required>
+        <input type="email" name="email" placeholder="Email address" required>
         <input type="tel" name="phone_num" placeholder="(+385)923-4567">
         <pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}" required>
         <textarea name="message" id="Your Message" cols="30" rows="10"></textarea>
@@ -31,9 +37,8 @@
 
 
     </form>
-
-
     <div>Contact number: +385 99 205 3344</div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
